@@ -1,0 +1,68 @@
+.table {
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-family: Tahoma, Verdana, sans-serif;
+    grid-row-gap: 0%;
+}
+
+.table__body {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    overflow: auto;
+    flex: 1 1 0;
+    flex-basis: 0px;
+    position: relative;
+}
+.table__body__row {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 0.2rem 0 0.3rem 0;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    position: relative;
+}
+
+.table__body__row__cell {
+        display: flex;
+        padding: 0.5rem;
+        font-size: calc(1rem + 0.5vw);
+        align-items: center;
+        color: white;
+      
+}
+.table__body__row__cell:nth-child(odd) {
+    background-color:black;
+}
+
+.table__body__row__cell:nth-child(even) {
+        background-color: black;
+    }
+    .table__body__row__cell:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .table__body__row__cell:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+.table__headers {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+
+.table__headers__cell {
+    padding: 0.5rem;
+    color: black;
+    font-size: calc(1.8rem + 0.5vw);
+    padding-bottom: 0;
+    font-weight: 500;
+}
