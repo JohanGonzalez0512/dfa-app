@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2'
+
 export const checkWord = (state, final, dfa, word) => {
 
 
